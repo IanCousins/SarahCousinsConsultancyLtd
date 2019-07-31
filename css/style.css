@@ -19,16 +19,35 @@ nav {
   text-align: center;
   font-family: 'Nunito';
   font-size: 20px;
+  font-weight: 700;
 }
 
 .nav-item {
   text-align: center;
   font-family: 'Nunito';
   font-size: 16px;
+  font-weight: 400;
 }
 
-.nav.scrolled{
-  background: red;
+.scrolled{
+  background: white !important;
+  color: #161616;
+}
+
+.a-scrolled {
+    color:#161616;
+}
+
+a#about.active  {
+  color: #64a19d;
+  outline: none;
+  border-bottom: 0.25rem solid #64a19d;
+}
+
+.nav-item>.active>a {
+  color: #64a19d;
+  outline: none;
+  border-bottom: 0.25rem solid #64a19d;
 }
 
 /* nav {
@@ -137,7 +156,7 @@ nav a:hover {
   text-transform: uppercase;
   color: rgba(255,255,255,.5);
   letter-spacing: 0.8rem;
-  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); */ */
+  /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); */
     /* -webkit-text-fill-color: transparent;
     display: block;
     /* font-size: 2em; */
@@ -169,6 +188,7 @@ nav a:hover {
   grid-template-columns: 1fr 700px 1fr;
   grid-template-rows: 100px auto auto auto auto auto auto auto 50px;
   row-gap: 10px;
+  padding: 40px;
 }
 
 .about-header{
@@ -206,7 +226,8 @@ nav a:hover {
   display: grid;
   background: #fff;
   grid-template-columns: 1fr 465px 465px 1fr;
-  grid-template-rows: 100px 300px 300px 300px 50px
+  grid-template-rows: 100px 300px 300px 300px 50px;
+  padding: 40px;
 }
 
 .services-header{
@@ -297,6 +318,7 @@ nav a:hover {
   grid-template-columns: 1fr 700px 1fr;
   grid-template-rows: 100px auto auto auto auto 50px;
   row-gap: 10px;
+  padding: 40px;
 }
 
 .testimonials-header{
@@ -348,6 +370,7 @@ nav a:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 20px auto;
   column-gap: 20px;
+  padding: 40px;
 }
 
 .contact-item {
