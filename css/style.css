@@ -297,11 +297,6 @@ nav a:hover {
   color: #212529;
 }
 
-#services h2{
-  font-family: 'Nunito';
-  font-size: 24px;
-}
-
 #services hr {
   display: block; height: 3px;
     border: 0; border-top: 3px solid #64A19D;
