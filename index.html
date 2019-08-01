@@ -36,41 +36,25 @@
 
 <body id="page-top">
 
-    <div class="nav-container">
-        <nav>
+     <!-- Nav Section -->
+    <div class="nav-container">        
+        <nav id="mainNav">
             <div class="nav-logo"><a href="#page-top">Sarah Cousins Consultancy</a></div>
             <div></div>
             <div class="nav-item">
-                <a href="#about">About</a>
+                <a class="nav-link" href="#about">About</a>
             </div>
             <div class="nav-item">
-                <a href="#services">Services</a>
+                <a class="nav-link" href="#services">Services</a>
             </div>
             <div class="nav-item">
-                <a href="#testimonials">Testimonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
             </div>
             <div class="nav-item">
-                <a href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </div>
         </nav>
     </div>
-
-
-    <!-- <div class="nav-container">
-        <nav>
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="burger-menu">
-                <img src="media/menu.png" alt="">
-            </label>
-            <div class="left-menu">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <a href="#" class="logo">Sarah Cousins Consultancy</a>
-        </nav>
-    </div> -->
 
     <!-- Header -->
     <section id="main" class="main-section">
@@ -85,7 +69,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section scrollspy">
         <div class="about-header">
             <h2>About</h2>
         </div>
@@ -141,7 +125,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services-section scrollspy">
         <div class="services-header">
             <h2>Services</h2>
         </div>
@@ -212,7 +196,8 @@
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials-section">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section scrollspy">
         <div class="testimonials-header">
             <h2>Testimonials</h2>
         </div>
@@ -258,7 +243,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section scrollspy">
         <div class="contact-item contact-item1">
             <a href="mailto:sarah@sarahcousinsconsultancyltd.co.uk">
                 <div>
@@ -288,10 +273,10 @@
 
     <!-- Change color on scroll-->
     <script>
-    $(window).scroll(function(){
-        $('nav').toggleClass('scrolled',$(this).scrollTop() > 50);        
-        $('nav a').toggleClass('a-scrolled',$(this).scrollTop() > 50);
-    });
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+            $('nav a').toggleClass('a-scrolled', $(this).scrollTop() > 50);
+        });
     </script>
 </body>
 
