@@ -121,7 +121,7 @@ nav a:hover {
 
 .main-section{
   display: grid;
-  grid-template-columns: auto auto auto;    
+  grid-template-columns: auto;    
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url(../media/main.png);
@@ -130,9 +130,11 @@ nav a:hover {
 }
 
 .main-item {
-  grid-column: 2;
+  /* grid-column: 2; */
   text-align: center;
-  padding: 250px;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  /* padding: 250px; */
 }
 
 #main  a{
@@ -424,4 +426,29 @@ footer {
   height: 50px;
   align-items: center;
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
